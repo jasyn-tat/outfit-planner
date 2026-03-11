@@ -17,7 +17,7 @@ async function askAI() {
     loadingScreen.style.display = "block";
 
     try {
-        const response = await fetch('http://127.0.0.1:5001/get-outfit', {
+    const response = await fetch('https://outfit-planner-backend-jrs9.onrender.com/get-outfit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             // Send ALL the data to Python
