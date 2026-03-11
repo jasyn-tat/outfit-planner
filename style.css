@@ -1,0 +1,135 @@
+:root {
+    --deep-blue: #1e3c72;
+    --soft-blue: #2a5298;
+    --light-blue: #eef2f7;
+    --accent-blue: #32c2fb;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Professional Blue Gradient */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    color: var(--deep-blue);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2.text {
+    font-weight: 600;
+    color: var(--soft-blue);
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid var(--light-blue);
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s;
+    background: var(--light-blue);
+}
+
+input[type="text"]:focus {
+    border-color: var(--accent-blue);
+    background: var(--white);
+    box-shadow: 0 0 8px rgba(50, 194, 251, 0.3);
+}
+
+.nav-button {
+    width: 100%;
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(50, 194, 251, 0.4);
+}
+
+.nav-button:hover {
+    background-color: var(--soft-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(50, 194, 251, 0.5);
+}
+
+.result {
+    background: var(--light-blue);
+    color: var(--deep-blue);
+    padding: 25px;
+    border-radius: 16px;
+    margin: 20px 0;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 15px;
+    border-left: 5px solid var(--accent-blue);
+}
+
+/* Shopping Link Buttons */
+.result a {
+    display: inline-block;
+    background-color: var(--deep-blue);
+    color: white !important;
+    padding: 6px 14px;
+    margin: 4px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.result a:hover {
+    background-color: var(--accent-blue);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--light-blue);
+    border-top: 4px solid var(--accent-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Outfit Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="input-page">
+      <h1>Outfit Planner</h1>
+
+      <h2 class="text">How old are you?</h2>
+      <input type="text" id="ageInput" placeholder="eg. 13">
+
+      <h2 class="text">Where are you going?</h2>
+      <input type="text" id="vibeInput" placeholder="eg. School or Party">
+
+      <h2 class="text">Favorite Brands</h2>
+      <input type="text" id="brandInput" placeholder="Nike, Hollister...">
+
+      <h2 class="text">Gender</h2>
+      <input type="text" id="genderInput" placeholder="Boy or Girl">
+
+      <button onclick="askAI()" class="nav-button">Generate Blueprints</button>
+    </div>
+
+    <div id="loading-screen" style="display:none;">
+      <div class="spinner"></div>
+      <p>Consulting the fashion gods...</p>
+    </div>
+
+    <div id="result-page" style="display: none;">
+      <h2>🔥 Your Custom Fits 🔥</h2>
+      <div id="result" class="result"></div>
+      <button onclick="goBack()" class="nav-button">← Plan another outfit!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
