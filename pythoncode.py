@@ -7,7 +7,9 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace with your actual Groq API key
-client = Groq(api_key="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")
+api_key = os.environ.get("GROQ_API_KEY")
+
+client = Groq(api_key=api_key)
 
 @app.route('/get-outfit', methods=['POST'])
 def get_outfit():
