@@ -1,8 +1,8 @@
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
 from groq import Groq
-import os
 
 app = Flask(__name__)
 CORS(app)
