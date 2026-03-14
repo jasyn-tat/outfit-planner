@@ -10,7 +10,7 @@ CORS(app)
 # Replace with your actual Groq API key
 api_key = os.environ.get("GROQ_API_KEY")
 
-client = Groq(api_key=api_key)
+client = Groq()
 
 @app.route('/get-outfit', methods=['POST'])
 def get_outfit():
