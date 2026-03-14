@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace with your actual Groq API key
-api_key = os.environ.get("API_GROQ_KEY")
+api_key = os.environ.get("GROQ_API_KEY")
 
 client = Groq(api_key=api_key)
 
